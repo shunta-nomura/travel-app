@@ -1,0 +1,7 @@
+<h1>hello</h1>
+<%= form_with model: @memorie, url: memories_path, local: true do |f| %>
+  <div>内容記載欄</div>
+  <%= f.text_area :description, placeholder:"思い出を記述してください" ,maxlength:"1000" %>
+  <%= f.submit "出品する" %>
+  <%=link_to 'もどる', root_path %>
+<% end %>
