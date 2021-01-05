@@ -4,7 +4,7 @@ class PrefecturesController < ApplicationController
 
   def show
     prefecture_name
-    @memories = Memorie.all
+    @memories = Memorie.where(prefecture_id: params[:id])
   end
 
   private
