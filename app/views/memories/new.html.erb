@@ -1,5 +1,6 @@
+
 <h1>hello</h1>
-<%= form_with model: @memorie, url: memories_path, local: true do |f| %>
+<%= form_with model: @memorie, url: memories_path(params[:format]), local: true do |f| %>
   <div>内容記載欄</div>
   <%= f.text_field :description, placeholder:"思い出を記述してください" ,maxlength:"1000" %>
   <%= f.file_field :image %>

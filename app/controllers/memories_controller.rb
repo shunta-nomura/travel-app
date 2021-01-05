@@ -6,7 +6,7 @@ class MemoriesController < ApplicationController
   def create
     @memorie = Memorie.new(memorie_params)
     if @memorie.save
-      redirect_to root_path
+      redirect_to prefecture_path(params[:format])
     else
       render :new
     end
