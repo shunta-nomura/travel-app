@@ -1,4 +1,4 @@
-
+<%= render "shared/header" %>
 <h2><%= @prefecture_box[params[:id].to_i - 1] %>の思い出</h2>
   <% @memories.each do |memorie| %>
     <%= render partial: "prefecture", locals: { memorie: memorie } %>
