@@ -1,20 +1,19 @@
-<div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<nav class="globalMenuSp">
-    <ul>
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
       <% if user_signed_in? %>
-        
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-up" %></li>
-        <li><%= link_to 'トップページ', root_path %></li>
-        <li><a href="#">Menu4</a></li>
-        <li><a href="#">Menu5</a></li>
+        <h1 class="logo"><%= link_to 'エヌ・ストレージ', root_path %></h1>
+        <i class="fa fa-times-circle menu-close"></i>
+        <%= link_to 'トップページ', root_path %>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
       <% else %>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <h1 class="logo"><%= link_to 'エヌ・ストレージ', root_path %></h1>
+        <i class="fa fa-times-circle menu-close"></i>
+        <%= link_to 'トップページ', root_path %>
+        <%= link_to 'ログイン', new_user_session_path %>
+        <%= link_to '新規登録', new_user_registration_path%>
       <% end %>
-    </ul>
-</nav>
+    </div>
+
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>

@@ -4,7 +4,86 @@
 <%= link_to "Sign up", '#', class: "btn btn-lg btn-primary" %>
 <%= render partial: "japan_map" %>
 <% else %>
-<div class="top">
-  
+<div class="wrap" data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <!-- Menu -->
+
+
+  <!-- ========== HEADER SECTION ========== -->
+  <section id="home" name="home"></section>
+  <div id="headerwrap">
+    <div class="container">
+      <div class="logo">
+      </div>
+      <br>
+      <div class="row">
+        <h1>エヌ・ストレージ</h1>
+        <br>
+        <h3>あなたにとっての旅の思い出を分かりやすく保存します。</h3>
+        <br>
+        <br>
+        <div class="col-lg-6 col-lg-offset-3">
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /headerwrap -->
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" name="about"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+        <h3>ABOUT SERVICE</h3>
+
+        <!-- INTRO INFORMATIO-->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p>このサービスは今までの旅の思い出を県ごとに表示することで好きな思い出を見やすくするサービスです。</p>
+					<p>今後もいろいろなサービスを追加していきます。</p>
+        <%= link_to 'ログイン', new_user_session_path %>
+        <%= link_to '新規登録', new_user_registration_path%>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /f -->
+
+  <!-- ========== CAROUSEL SECTION ========== -->
+  <section id="portfolio" name="portfolio"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <h3>機能一覧</h3>
+				<p>今後作成します！お楽しみに！</p>
+        <!-- col-lg-8 -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </div>
+  <!-- f -->
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Minimal</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/minimal-bootstrap-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Minimal template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Template Main Javascript File -->
+
 </div>
 <% end %>
