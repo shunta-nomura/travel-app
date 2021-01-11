@@ -1,12 +1,12 @@
   <nav class="menu" id="theMenu">
     <div class="menu-wrap">
       <% if user_signed_in? %>
-        <h1 class="logo"><%= link_to 'エヌ・ストレージ', root_path %></h1>
+        <h1 class="logo"><%= link_to 'エヌ・メモリー', root_path %></h1>
         <i class="fa fa-times-circle menu-close"></i>
         <%= link_to 'トップページ', root_path %>
         <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
       <% else %>
-        <h1 class="logo"><%= link_to 'エヌ・ストレージ', root_path %></h1>
+        <h1 class="logo"><%= link_to 'エヌ・メモリー', root_path %></h1>
         <i class="fa fa-times-circle menu-close"></i>
         <%= link_to 'トップページ', root_path %>
         <%= link_to 'ログイン', new_user_session_path %>

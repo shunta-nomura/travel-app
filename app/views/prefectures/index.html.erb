@@ -1,8 +1,10 @@
 <%= render "shared/header" %>
  
 <% if user_signed_in? %>
-<%= link_to "Sign up", '#', class: "btn btn-lg btn-primary" %>
-<%= render partial: "japan_map" %>
+  <div class="main_cont">
+    <h3 class = "cont-title">作成、または見たい思い出の場所を選んで下さい</h3>
+    <%= render partial: "japan_map" %>
+  </div>
 <% else %>
 <div class="wrap" data-spy="scroll" data-offset="0" data-target="#theMenu">
 
@@ -17,7 +19,7 @@
       </div>
       <br>
       <div class="row">
-        <h1>エヌ・ストレージ</h1>
+        <h1>エヌ・メモリー</h1>
         <br>
         <h3>あなたにとっての旅の思い出を分かりやすく保存します。</h3>
         <br>

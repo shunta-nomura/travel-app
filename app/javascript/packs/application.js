@@ -12,6 +12,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("../flame")
+require("../form")
 require("top/main")
 
 
