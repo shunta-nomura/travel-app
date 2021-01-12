@@ -4,4 +4,5 @@ class Memorie < ApplicationRecord
   belongs_to :prefecture
 
   validates :prefecture_id, presence: true
+  validates :image, presence: true
 end

@@ -1,13 +1,31 @@
 <%= render "shared/header" %>
-<h1>hello</h1>
 <%= form_with model: @memorie, url: memories_path(params[:format]), local: true do |f| %>
-  <div>内容記載欄</div>
-  <%= f.text_field :description, placeholder:"思い出を記述してください" ,maxlength:"1000" %>
-  <%= f.file_field :image %>
-   <div class="field">
-   <%= f.label :prefecture, "都道府県" %>
-      <%= f.hidden_field :prefecture_id, value: params[:format]%>
-   </div>
-  <%= f.submit "投稿する" %>
-  <%=link_to 'もどる', root_path %>
+  <div class="form">
+    <div class="form-toggle"></div>
+    <div class="form-panel one">
+      <div class="form-header">
+        <h1>思い出投稿画面</h1>
+      </div>
+      <div class="form-content">
+        <form>
+          <div class="log-form-group">
+            <label for="username">説明(無くても良い)</label>
+            <%= f.text_area :description, placeholder:"思い出を記述してください" %>
+          </div>
+          <div>
+            <label for="image">画像</label>
+            <%= f.file_field :image, class: "image-field" %>
+          </div>
+          <%= f.hidden_field :prefecture_id, value: params[:format]%>
+          <div class="log-form-group">
+            <%= f.submit "投稿する",class: "button" %>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="pen-footer"><a href="https://www.behance.net/gallery/30478397/Login-Form-UI-Library" target="_blank"><i class="material-icons">arrow_backward</i>View on Behance</a>
+    <a href="https://github.com/andyhqtran/UI-Library/tree/master/Login%20Form" target="_blank">View on Github<i class="material-icons">arrow_forward</i></a>
+  </div>
 <% end %>
+<%=link_to 'もどる', root_path %>

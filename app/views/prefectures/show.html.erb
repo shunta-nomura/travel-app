@@ -3,6 +3,9 @@
   <% @memories.each do |memorie| %>
     <%= render partial: "prefecture", locals: { memorie: memorie } %>
   <% end %>
+  
   <div>
-    <%= link_to "新しい思い出", new_memory_path(params[:id]) %>
+    <div class="button-box">
+      <%= link_to "新しい思い出", new_memory_path(params[:id]),class: "button new-memorie-button" %>
+    </div>
   </div>
