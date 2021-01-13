@@ -46,6 +46,14 @@ belongs_to :user
   * 友達機能	友達と情報共有をしたい
   * シェア機能	写真を共有したい
 
+* ### 実装機能
+  * ユーザーログイン、サインアップ機能 <br>
+https://user-images.githubusercontent.com/58507009/104494631-0c463c00-561a-11eb-85b6-1984511dee2e.gif
+  * ユーザーログイン機能 <br>
+https://user-images.githubusercontent.com/58507009/104494634-0cded280-561a-11eb-8f2f-974b1681a313.gif
+  * 投稿機能 <br>
+https://user-images.githubusercontent.com/58507009/104494620-07818800-561a-11eb-9512-9164e08b8c28.gif
+  * 画像の表示はユーザー及び県別に行われている
 
 * ### ローカルでの動作方法 <br> 
   * $ git clone https://github.com/shunta-nomura/travel_app
