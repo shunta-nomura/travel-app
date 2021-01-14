@@ -25,7 +25,6 @@ RSpec.describe Memorie, type: :model do
     it 'userがないと登録できない' do
       @memorie.user = nil
       @memorie.valid?
-      binding.pry
       expect(@memorie.errors.full_messages).to include("User must exist")
     end
 
