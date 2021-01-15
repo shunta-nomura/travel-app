@@ -1,9 +1,11 @@
 class Memorie < ApplicationRecord
-  has_one_attached :image
+  has_many_attached :images
    belongs_to :user
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
 
   validates :prefecture_id, presence: true
-  validates :image, presence: true
+  validates :images, presence: true
+
+  
 end
