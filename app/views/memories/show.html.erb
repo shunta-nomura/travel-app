@@ -1,0 +1,5 @@
+<%= render "shared/header" %>
+  <% @memorie.images.each do |image| %>
+    <%= image_tag image.variant(resize: '300x300'), class:"item-box-img" %>
+  <% end %>
+

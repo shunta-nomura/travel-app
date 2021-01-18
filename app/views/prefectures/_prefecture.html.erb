@@ -1,5 +1,7 @@
 <% if memorie.images.attached? %>
  <% memorie.images.each do |image| %>
-  <%= link_to image_tag(image.variant(resize: '300x300')), class:"item-box-img"%>
+  <div class="gallery">
+    <%= link_to image_tag( image.variant(resize: '400x600')), memory_path(image[:record_id]), class:"item-box-img" %>
+  </div>
  <% end %>
 <% end %>

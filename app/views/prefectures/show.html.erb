@@ -1,11 +1,9 @@
 <%= render "shared/header" %>
 <h2><%= @prefecture_box[params[:id].to_i - 1] %>の思い出</h2>
-  <% @memories.each do |memorie| %>
-    <%= render partial: "prefecture", locals: { memorie: memorie } %>
-  <% end %>
-  
-  <div>
-    <div class="button-box">
-      <%= link_to "新しい思い出", new_memory_path(params[:id]),class: "button new-memorie-button" %>
-    </div>
-  </div>
+<% @memories.each do |memorie| %>
+  <%= render partial: "prefecture", locals: { memorie: memorie } %>
+<% end %>
+
+<div class="button-box">
+  <%= link_to "新しい思い出", new_memory_path(params[:id]),class: "button new-memorie-button" %>
+</div>
