@@ -206,8 +206,6 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
-  color: $gray;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -226,7 +224,6 @@ body {
 }
 
 .form {
-  z-index: 15;
   position: relative;
   background: $white;
   width: $max-width;
