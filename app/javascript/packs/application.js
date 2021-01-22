@@ -13,7 +13,7 @@ require("channels")
 require("jquery")
 require("../flame")
 require("../form")
-require("../preview")
+//require("../preview")
 require("top/main")
 
 
