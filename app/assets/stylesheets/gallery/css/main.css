@@ -1754,3 +1754,15 @@ body {
     text-align: center;
     font-size: large;
   }
+  div.gallaey {
+    text-align: center;
+    height: 100%;
+  }
+  
+  div.gallaey:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallaey img {
+    width: 100%;
+  }

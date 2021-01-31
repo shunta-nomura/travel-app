@@ -16,6 +16,10 @@
             <label for="images">画像</label>
             <%= f.file_field :images, class: "image-field", direct_upload: true, multiple: true %>
           </div>
+          <div class="log-form-group">
+            <label>旅行の日付</label>
+            <%= f.date_field :day, class: 'form-control' %>
+          </div>
           <%= f.hidden_field :prefecture_id, value: params[:format]%>
           <div class="log-form-group">
             <%= f.submit "投稿する",class: "button" %>

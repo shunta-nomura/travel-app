@@ -5,7 +5,8 @@
       <%= image_tag image, class:"item-box-img" %>
     </div>
     <div class = "memorie-description">
-      <%= @memorie.description %>
+      <%= @memorie.description %><br>
+      <%= @memorie.day %>
     </div>
     <%= link_to "削除",memory_path(params[:image_id].to_i, @memorie.id, prefecture_id: params[:prefecture_id]), method: :delete,class: "button new-memorie-button" %>
   <% end %>
