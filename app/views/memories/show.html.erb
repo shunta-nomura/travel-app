@@ -1,5 +1,13 @@
 <%= render "shared/header" %>
-  <% @memorie.images.each do |image| %>
-    <%= image_tag image.variant(resize: '300x300'), class:"item-box-img" %>
+<% @memorie.images.each do |image| %>
+  <% if image.blob_id == params[:image_id].to_i %>
+    <div class="one-picture">
+      <%= image_tag image, class:"item-box-img" %>
+    </div>
+    <div class = "memorie-description">
+      <%= @memorie.description %><br>
+      <%= @memorie.day %>
+    </div>
+    <%= link_to "削除",memory_path(params[:image_id].to_i, @memorie.id, prefecture_id: params[:prefecture_id]), method: :delete,class: "button new-memorie-button" %>
   <% end %>
-
+<% end %>

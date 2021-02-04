@@ -3,13 +3,15 @@
 <div id="wrapper_ga">
   <!-- Header -->
   <!-- Main -->
-  <div id="main">
+  <div class="gallaey-main">
     <% @memories.each do |memorie| %>
       <% if memorie.images.attached? %>
         <% memorie.images.each do |image| %>
           <article class="thumb">
-            <div class="gallery">
-              <%= image_tag image.variant(resize: '100% x 100%'), class:'image' %>
+            <div class="gallaey">
+              <%= link_to memory_path(id: image.record_id, image_id: image.blob_id, prefecture_id: params[:id]) do %>
+                <%= image_tag image, class:'image' %>
+              <% end %>
             </div>
           </article>
         <% end %>

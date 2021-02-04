@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
   has_many :memorie
+  has_one_attached :image
 end
