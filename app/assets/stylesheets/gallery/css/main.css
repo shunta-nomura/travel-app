@@ -24,9 +24,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  background: #242629;
-}
 
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
@@ -93,9 +90,6 @@ em, i {
   font-style: italic;
 }
 
-p {
-  margin: 0 0 2em 0;
-}
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
@@ -300,7 +294,6 @@ form {
   }
 
 label {
-  color: #ffffff;
   display: block;
   font-size: 0.9em;
   font-weight: 300;
@@ -1158,11 +1151,6 @@ table {
   }
 
 /* Header */
-
-body {
-  padding: 0 0 4em 0;
-}
-
 #header {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);

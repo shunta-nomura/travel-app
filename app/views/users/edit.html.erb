@@ -1,0 +1,11 @@
+<%= form_with model: @user, local: true do |f| %>
+  <form> 
+    <div class="log-form-group">
+      <label>お気に入り画像登録</label>
+      <%= f.file_field :image, class: "image-field", direct_upload: true %>
+    </div>
+    <div class="log-form-group">
+      <%= f.submit "投稿する",class: "button" %>
+    </div>
+  </form>
+<% end %>

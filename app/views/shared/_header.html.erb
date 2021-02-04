@@ -4,6 +4,7 @@
         <h1 class="logo"><%= link_to 'エヌ・メモリー', root_path %></h1>
         <i class="fa fa-times-circle menu-close"></i>
         <%= link_to 'トップページ', root_path %>
+        <%= link_to 'マイページ', user_path(current_user) %>
         <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
       <% else %>
         <h1 class="logo"><%= link_to 'エヌ・メモリー', root_path %></h1>
