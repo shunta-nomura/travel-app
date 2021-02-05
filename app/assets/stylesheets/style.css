@@ -1924,3 +1924,6 @@ table {
     text-align: center;
     font-size: large;
   }
+  #memorie_day{
+    border: 1px solid gray;
+  }
